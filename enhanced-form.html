@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creative designer seeking a passionate assistant designer. Join a visual and strategic journey." />
+  <meta name="keywords" content="designer, assistant, recruitment, creativity, HTML5, accessibility, SEO, form validation" />
+  <meta name="author" content="El-Marshall" />
+  <title>Assistant Designer Recruitment | El-Marshall</title>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Join My Creative Universe</h1>
+    <p>I'm looking for a talented assistant designer to collaborate on impactful visual and strategic projects.</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="#profile">Candidate Profile</a></li>
+      <li><a href="#details">Role Details</a></li>
+      <li><a href="#apply">Apply Now</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section id="profile" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Who I'm Looking For</h2>
+      <ul>
+        <li>Strong visual sense and design intuition</li>
+        <li>Comfortable with digital tools and workflows</li>
+        <li>Collaborative, adaptive, and proactive mindset</li>
+        <li>Basic understanding of HTML5 and accessibility</li>
+      </ul>
+    </section>
+
+    <section id="details" aria-labelledby="details-heading">
+      <h2 id="details-heading">Role Overview</h2>
+
+      <article aria-labelledby="tasks-heading">
+        <h3 id="tasks-heading">Key Responsibilities</h3>
+        <table border="1">
+          <caption>Design Assistant Tasks</caption>
+          <thead>
+            <tr>
+              <th scope="col">Task</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Tools Involved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visual asset creation</td>
+              <td>Weekly</td>
+              <td>Photoshop, Illustrator</td>
+            </tr>
+            <tr>
+              <td>Web content structuring</td>
+              <td>Bi-weekly</td>
+              <td>HTML5, Figma</td>
+            </tr>
+            <tr>
+              <td>Brand consistency checks</td>
+              <td>Monthly</td>
+              <td>Style guides, audits</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article aria-labelledby="media-heading">
+        <h3 id="media-heading">Creative Inspiration</h3>
+        <figure>
+          <img src="https://images.pexels.com/photos/1194420/pexels-photo-1194420.jpeg" alt="Sample branding visual" width="400" />
+          <figcaption>Recent branding concept for a cultural event</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="apply" aria-labelledby="apply-heading">
+      <h2 id="apply-heading">Apply to Join</h2>
+      <form action="#" method="post" aria-label="Application Form">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname" >Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required ="name" />
+          <br/>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required ="email" />
+          <br/>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+22812345678" required ="tel" pattern="^\+?[0-9]{11}$"/>
+          <br/>
+          <label for="portfolio">Portfolio URL:</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" required />
+          <br/>
+          <label for="experience">Years of Experience:</label>
+          <input type="number" id="experience" name="experience" min="0" max="50" placeholder="e.g. 2" required />
+          <br/>
+          <label for="availability">Availability:</label>
+          <select id="availability" name="availability" required>
+            <option value="">-- Select --</option>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="freelance">Freelance</option>
+          </select>
+          <br/>
+          <label for="motivation">Why do you want to join?</label>
+          <textarea id="motivation" name="motivation" rows="5" placeholder="Share your motivation..."minlength="50"  required></textarea>
+          <br/>
+          <label for="referral">Referral Code (if any):</label>
+                    <input type="text" id="referral" name="referral" readonly value="DESIGN2025" />
+          <br/>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 El-Marshall. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
